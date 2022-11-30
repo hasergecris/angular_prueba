@@ -1,0 +1,118 @@
+:root {
+  --color-texto: #373652;
+  --negro: #212d39;
+  --gris-oscuro: #4c6f91;
+  --gris: #7b889f;
+  --fondo: #f8f9fc;
+  --icono-gris: #8ba3bc;
+  --border-bottom: #e1e1f1;
+  --borde-rifa: #dde6f8;
+  --gris-claro: #f0f1f5;
+  --color-parrafos: #6e869e;
+  --amarillo: #e5d623;
+  --amarillo-quemado: #f0cc3e;
+  --naranja: #ee7d33;
+  --blanco: #fff;
+}
+
+body {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.contenedor_listado {
+  padding: 4%;
+  background-color: var(--fondo);
+}
+
+.card {
+  border: none !important;
+  border-radius: 1.2rem !important;
+  height: auto;
+}
+
+.card-header {
+  background-color: var(--naranja) !important;
+  color: var(--blanco) !important;
+  border-radius: 1.2rem 1.2rem 0 0 !important;
+  border: none !important;
+  display: flex;
+  align-items: center;
+  height: 4rem;
+}
+
+.card-body {
+  padding: 2% 3% !important;
+}
+
+.caja_1 {
+  border-right: 1px solid var(--naranja);
+}
+
+.titulo {
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+.ciudad {
+  font-weight: 700;
+}
+
+.hora_vuelo {
+  font-weight: 700;
+}
+
+.marca {
+  font-size: 0.75rem;
+}
+
+.num_vuelo {
+  font-weight: 700;
+  font-size: 0.75rem;
+  display: flex;
+  align-self: center;
+}
+
+.title {
+  color: var(--naranja) !important;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.descripcion {
+  padding: 0% 0% 2% ;
+  border-bottom: 1px solid var(--naranja);
+  width: 95%;
+}
+
+.icono {
+  color: var(--naranja) !important;
+}
+
+.titulo_tarifa {
+  font-size: .75rem;
+  font-weight: 700;
+  margin: 0 2%;
+}
+
+.clase_dinero {
+  font-size: 0.938rem;
+  font-weight: 300;
+  margin-right: 2%;
+  display: flex;
+  margin-bottom: 0;
+  align-items: center
+}
+
+.precio_total, .precio_total_tarifa {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.enlace {
+  color: var(--negro);
+  font-size: .75rem;
+  font-weight: 700;
+}
+
+.enlace:hover {
+  color: var(--naranja);
+}

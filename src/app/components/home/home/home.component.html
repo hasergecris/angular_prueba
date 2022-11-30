@@ -1,0 +1,206 @@
+<div class="contenedor_listado">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header">
+            <div class="icono_tiempo">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <h2 class="titulo d-flex align-items-center mx-2">Opciones de vuelo</h2>
+          </div>
+
+
+          <div class="card-body d-flex">
+
+            <div class="col-8 caja_1">
+
+              <div class="row mb-3 descripcion">
+                <h5 class="title">Vuelo-ida</h5>
+                <div class="col-12 d-flex align-items-center justify-content-around">
+                  <div class="col-2">
+                    <div class=" imagen d-flex justify-content-center">
+                      <img src="assets/img/img_2.png" height="30">
+                    </div>
+  
+                    <div class="marca text-center ">{{code}} - {{FlightNumber}}</div>
+                    <div class="descripcion_vuelo d-flex justify-content-center">
+                      <div class="icono mx-2">
+                        <i class="fa-solid fa-plane-departure"></i>
+                      </div>
+                      <div class="num_vuelo text-center">{{AirEquipType}}</div>
+                    </div>
+                  </div>
+  
+  
+                  <div class="col-2 flex-column">
+  
+                    <div class="ciudad text-center">{{LocationCode_ida}}</div>
+                    <div class="hora_vuelo text-center">{{hora_salida_ida}}:{{minutos_salida_ida}}</div>
+                    <div class="fecha_salida text-center">{{dia_salida_ida}} de {{mes_salida_ida}}</div>
+                  </div>
+  
+                  <div class="col-3">
+                    <div class="caja_tiempo d-flex justify-content-center">
+                      <div class="icono mx-2">
+                        <i class="fa-solid fa-clock"></i>
+                      </div>
+                      <div class="horas_vuelo text-center"> {{hora_calculada_ida}} hrs {{minutos_calculados_ida}} min</div>
+                    </div>
+                    <div class="icono text-center">
+                      <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                    <div class="num_escalas text-center"> 1 Escala</div>
+                  </div>
+  
+                  <div class="col-2">
+                    <div class="ciudad text-center">{{Destino_final}}</div>
+                    <div class="hora_vuelo text-center">{{hora_llegada_ida}}:{{minutos_llegada_ida}}</div>
+                    <div class="fecha_salida text-center">{{dia_llegada_ida}} de {{mes_llegada_ida}}</div>
+                  </div>
+                </div>
+              </div>
+              <!-- vuelo ida -->
+  
+              <div class="row mb-3 descripcion">
+                <h5 class="title">Escala</h5>
+              
+                <div class="row mb-3">
+                  <div class="col-12 d-flex align-items-center justify-content-around">
+  
+                    <div class="col-2 flex-column">
+                      <div class="hora_vuelo text-center">{{hora_salida_ida}}:{{minutos_salida_ida}}</div>
+                      <div class="fecha_salida text-center">{{dia_salida_ida}} de {{mes_salida_ida}}</div>
+                    </div>
+  
+                    <div class="col-3 d-flex justify-content-center ">
+                      <div class="ciudad text-center">{{LocationCode_ida}}</div>
+  
+                      <div class="icono text-center mx-3">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                      </div>
+                      <div class="ciudad text-center">{{locationCode_escala}}</div>
+                    </div>
+  
+                    <div class="col-2">
+                      <div class="hora_vuelo text-center">{{hora_llegada_escala}}:{{minutos_llegada_escala}}</div>
+                      <div class="fecha_salida text-center">{{dia_llegada_escala}} de {{mes_llegada_escala}}</div>
+                    </div>
+  
+  
+                    <div class="col-2"> 
+                      <div class=" imagen d-flex justify-content-center">
+                        <img src="assets/img/img_2.png" height="30">
+                      </div>
+                      <div class="marca text-center ">{{code}} - {{FlightNumber}}</div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row mb-3">
+                  
+                  <div class="col-12 d-flex align-items-center justify-content-around">
+                  
+                    <div class="col-2 flex-column">
+                      <div class="hora_vuelo text-center">{{hora_salida_escala}}:{{minutos_salida_escala}}</div>
+                      <div class="fecha_salida text-center">{{dia_salida_escala}} de {{mes_salida_escala}}</div>
+                      
+                    </div>
+                  
+                    <div class="col-3 d-flex justify-content-center">
+                      <div class="ciudad text-center">{{locationCode_escala}}</div>
+                  
+                      <div class="icono text-center mx-3">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                      </div>
+                      <div class="ciudad text-center">{{Destino_final}}</div>
+                      
+                    </div>
+                  
+                    <div class="col-2">
+                      <div class="hora_vuelo text-center">{{hora_llegada_ida}}:{{minutos_llegada_ida}}</div>
+                      <div class="fecha_salida text-center">{{dia_llegada_ida}} de {{mes_llegada_ida}}</div>
+                    </div>
+                      
+                  
+                    <div class="col-2">
+                      <div class=" imagen d-flex justify-content-center">
+                        <img src="assets/img/img_2.png" height="30">
+                      </div>
+                      <div class="marca text-center ">{{code}} - {{numero_vuelo_escala_llegada}}</div>
+                    </div>
+                  </div>
+  
+                </div>
+              </div> <!--escala  -->
+
+              <div class="row mb-3 descripcion">
+                <h5 class="title">Vuelo-vuelta</h5>
+  
+                <div class="col-12 d-flex align-items-center justify-content-around">
+                  <div class="col-2">
+                    <div class="imagen d-flex justify-content-center">
+                      <img src="assets/img/img_2.png" height="30">
+                    </div>
+  
+                    <div class="marca text-center ">{{code}} - {{numero_vuelo_escala_llegada}}</div>
+                    <div class="descripcion_vuelo d-flex justify-content-center">
+                      <div class="icono mx-2">
+                        <i class="fa-solid fa-plane-departure"></i>
+                      </div>
+                      <div class="num_vuelo text-center">{{numero_vuelo_salida}}</div>
+                    </div>
+                  </div>
+  
+  
+                  <div class="col-2 flex-column">
+  
+                    <div class="ciudad text-center">{{Destino_final}}</div>
+                    <div class="hora_vuelo text-center">{{hora_salida_vuelta}}:{{minutos_salida_vuelta}}</div>
+                    <div class="fecha_salida text-center">{{dia_salida_vuelta}} de {{mes_salida_vuelta}}</div>
+                    
+                  </div>
+                  <div class="col-3">
+                    <div class="caja_tiempo d-flex justify-content-center ">
+                      <div class="icono mx-2">
+                        <i class="fa-solid fa-clock"></i>
+                      </div>
+                      <div class="horas_vuelo text-center"> {{hora_calculada_vuelta}} hrs {{minutos_calculados_vuelta}}min</div>
+                    </div>
+                    <div class="icono text-center">
+                      <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                    <div class="num_escalas text-center"> 1 Escala</div>
+                  </div>
+  
+                  <div class="col-2">
+                    <div class="ciudad text-center">BOG</div>
+                    <div class="hora_vuelo text-center">{{hora_llegada_vuelta}}:{{minutos_llegada_vuelta}}</div>
+                    <div class="fecha_salida text-center">{{dia_llegada_vuelta}} de {{mes_llegada_vuelta}}</div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3 flex-column d-flex align-self-center">
+              <div class="titulo_tarifa text-center">Tarifa Neta</div>
+              <div class="caja_precios d-flex justify-content-center">
+                <h5 class="clase_dinero"> COP</h5>
+                <div class="precio_total"> {{tarifa_neta | currency}}</div>
+              </div>
+              <div class="caja_precios d-flex justify-content-center align-items-center">
+                <h5 class="titulo_tarifa"> Costo Total:</h5>
+                <h5 class="clase_dinero"> COP</h5>
+                <div class="precio_total_tarifa">{{costo_total | currency}}</div>
+              </div>
+              <a href="#" class="enlace text-center">Detalle tarifa</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
